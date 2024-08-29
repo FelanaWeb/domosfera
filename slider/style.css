@@ -1,0 +1,59 @@
+.sliderContainer {
+  width: 88%;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  height: 400px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prevButton, 
+.nextButton {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  font-size: 43px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.prevButton {
+  left: 10px;
+}
+
+.nextButton {
+  right: 10px;
+}
+
+.sliderDots{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  column-gap: 5px;
+}
+
+.dot {
+  width: 13px;
+  height: 13px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
+}

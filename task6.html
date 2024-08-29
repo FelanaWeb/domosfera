@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider/style.css">
+    <title>Домосфера</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Домосфера</h1>
+            <div class="header-buttons">
+                <button id="change-theme">Сменить тему</button>
+                <button id="toggle-accessibility">Для слабовидящих</button>
+            </div>
+        </header>
+
+        <section id="description">
+            <h2>О Нас</h2>
+            <p>Добро пожаловать на лучший сайт по продаже недвижимости в вашем районе. Мы предлагаем широкий выбор
+                недвижимости, чтобы удовлетворить все ваши потребности.</p>
+        </section>
+
+        <section id="properties">
+            <h2>Предложения</h2>
+            <div class="sliderContainer">
+							<!-- Слайды -->
+							 <div class="slider">
+								<img src="img/img1.jpg" alt="">
+								<img src="img/img2.jpg" alt="">
+								<img src="img/img3.avif" alt="">
+							 </div>
+							 <!-- Кнопки влево вправо -->
+								<button class="prevButton" onclick="showPrevSlide()">&lt;</button>
+								<button class="nextButton" onclick="showNextSlide()">&gt;</button>
+					
+						</div>
+						<div class="sliderDots" id="sliderDots">
+						 
+						</div>
+        </section>
+
+        <section id="discounts">
+            <h2>Скидки</h2>
+            <p>Ознакомьтесь с нашими удивительными скидками!</p>
+            <button id="toggle-discount-details">Показать детали</button>
+
+            <div id="discountDetails" class="accordeon-hidden">
+
+                <div class="card">
+                    <h3>Скидка на квартиры в центре</h3>
+                    <p>Скидка 10% на все квартиры в центре города до конца месяца.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Скидка на загородные дома</h3>
+                    <p>Скидка 15% на все загородные дома при покупке до конца лета.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Скидка на пентхаусы</h3>
+                    <p>Скидка 20% на все пентхаусы при покупке в течение следующего месяца.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="reviews">
+            <h2>Отзывы</h2>
+            <div class="reviews-container" id="reviews-container">
+
+                <div class="card">
+                    <p>"Отличный сервис и большой выбор недвижимости. Очень доволен покупкой!"</p>
+                    <p><strong>- Иван Петров</strong></p>
+                </div>
+
+                <div class="card">
+                    <p>"Нашли идеальный дом благодаря этому сайту. Всем рекомендую!"</p>
+                    <p><strong>- Иван Петров</strong></p>
+                </div>
+
+                <div class="card">
+                    <p>"Отличные скидки и приятные сотрудники. Покупка прошла быстро и без проблем."</p>
+                    <p><strong>- Алексей Смирнов</strong></p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <footer>
+            <p>&copy; 2024 Домосфера. Все права защищены</p>
+        </footer>
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <script src="slider/script.js"></script>
+</body>
+
+</html>
